@@ -112,9 +112,9 @@ Main proc
   ; ---------------------------------------------
   ; set width and height as percentages of screen
   ; ---------------------------------------------
-    invoke GetPercent,sWid,70
+    invoke GetPercent,sWid,10
     mov Wwd, eax
-    invoke GetPercent,sHgt,70
+    invoke GetPercent,sHgt,10
     mov Wht, eax
 
   ; ----------------------

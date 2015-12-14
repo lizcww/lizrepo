@@ -112,9 +112,9 @@ Main proc
   ; ---------------------------------------------
   ; set width and height as percentages of screen
   ; ---------------------------------------------
-    invoke GetPercent,sWid,10
+    invoke GetPercent,sWid,20
     mov Wwd, eax
-    invoke GetPercent,sHgt,10
+    invoke GetPercent,sHgt,20
     mov Wht, eax
 
   ; ----------------------
@@ -139,11 +139,13 @@ Main proc
     sub eax, Wwd                ; sub window width from screen width
     shr eax, 1                  ; divide it by 2
     mov Wtx, eax                ; copy it to variable
+    mov Wtx, 1
 
     mov eax, sHgt
     sub eax, Wht                ; sub window height from screen height
     shr eax, 1                  ; divide it by 2
     mov Wty, eax                ; copy it to variable
+    mov Wty, 1
 
   ; -----------------------------------------------------------------
   ; create the main window with the size and attributes defined above
