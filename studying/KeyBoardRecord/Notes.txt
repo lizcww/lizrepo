@@ -1,0 +1,14 @@
+1. how to get keyboard and mouse event while window is not activated?
+1). SetWindowsHookEx(Global)
+2). RegisterRawInputDevices
+3). RegisterHotKey
+
+
+2. How to save the script?
+List
+
+
+
+3. How to execute the script?
+keybd_event
+mouse_event
