@@ -1,0 +1,2 @@
+LIBRARY hookDLL
+ ; EXPORTS [your_exported_proc_name]
